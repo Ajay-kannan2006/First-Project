@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+    <div class="row">
+        <div class="col-5 offset-3">
+    <form method="post" action="/listing/<%=data._id%>?_method=put">
+        <div class="mb-3">
+            <label for="title" class="form-label"> Title</label>
+            <input type="text" placeholder="Enter title" name="data[title]" value="<%=data.title%>" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="Description" class="form-label"> Description</label>
+            <textarea type="text"
+                placeholder="Enter description"
+                name="data[description]" 
+                class="form-control"
+                ><%=data.description%>
+            </textarea>
+        </div>
+        <div class="mb-3">
+            <label for="Price" class="form-label"> Price</label>
+            <input type="number" placeholder="Enter price" name="data[price]"  value="<%=data.price%>" class="form-control">
+        </div>
+
+    <div class="mb-3">
+        <label for="image" class="form-label"> Image</label>
+        <input type="text" placeholder="Enter image link" name="data[image[url]]" value="<%=data.image.url%>" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="country" class="form-label"> Country</label>
+        <input type="text" placeholder="Enter country" name="data[country]"value="<%=data.country%>"  class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Location" class="form-label"> Location</label>
+        <input type="text" placeholder="Enter location" name="data[location]" value="<%=data.location%>" class="form-control">
+    </div>
+
+    <button class="btn btn-dark edit">submit</button>
+    </form>
+    </div>
+    </div>
+</form>
+</body>

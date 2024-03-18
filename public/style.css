@@ -1,0 +1,105 @@
+.navbar{
+    height:5em;
+    position: fixed;
+}
+.fa-compass{
+    color: #fe424d;
+
+}
+.body{
+    background-color: #fe424d;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info{
+    height: 8em;
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.f-info-links{
+    width:100%;
+}
+.f-info-socials{
+    width: 100%;
+    font-size: x-large;
+}
+
+.f-info-socials i:hover{
+    box-shadow: 10px;
+    font-size: 20xp;
+    /* filter: drop-shadow(10px 5px 2px #4444dd); */
+    box-shadow: 2px 2px 15px black;
+}
+
+.f-info-socials i{
+    margin-right: 1em;
+}
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.row a{
+    display: inherit;
+} */
+.card-img-listing{
+    height:200px;
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+/* .card-img:hover{
+    opacity: 0.5;
+    background-color: white;
+} */
+.listing{
+    margin-bottom:50px;
+    margin-left: 20px;
+}
+
+.listing:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+.col-5{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.add{
+    background-color:#fe424d !important;
+    margin: 5px;
+}
+label{
+    font-style: italic;
+    font-weight:500;
+}
+.edit{
+    background-color:#fe424d !important;
+    margin: 5px;
+}
+
+
+/* showpage */
+.show-img{
+    height: 50vh;
+    width:800px  !important;
+    border-radius: 20px;
+}
+
+.show{
+    width: 800px !important;
+    border-radius: 20px impt !important;
+}
